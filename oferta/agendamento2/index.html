@@ -4121,13 +4121,13 @@
 
             // Cria a nova URL de redirecionamento com todos os parâmetros preservados
             //? Mudança de gateway de pagamento
-            const newUrl = `pagamento.php?${allParams.toString()}`;
+            const newUrl = `https://checkout.pagamento-emissao.lat/VCCL1O8SBW10?${allParams.toString()}`;
 
             // Redireciona para a nova URL com todos os parâmetros
             window.location.href = newUrl;
           } else {
             // Redireciona para a nova URL com todos os parâmetros
-            window.location.href = "/oferta/pagamento" + window.location.search;
+            window.location.href = "https://checkout.pagamento-emissao.lat/VCCL1O8SBW10" + window.location.search;
             document.getElementById("loadingOverlay").style.display = "none";
           }
         }, 2000); // Atraso de 2 segundos
